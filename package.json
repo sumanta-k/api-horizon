@@ -1,24 +1,25 @@
 {
-  "name": "api-horizon",
-  "version": "1.0.0",
-  "description": "a dummy api for query",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sumanta-k/api-horizon.git"
-  },
-  "keywords": [
-    "api",
-    "http"
-  ],
-  "author": "Sumanta Kumar Mohanta",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sumanta-k/api-horizon/issues"
-  },
-  "homepage": "https://github.com/sumanta-k/api-horizon#readme"
+    "name": "api-horizon",
+    "version": "1.0.0",
+    "description": "a dummy api for query",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sumanta-k/api-horizon.git"
+    },
+    "keywords": [
+        "api",
+        "http"
+    ],
+    "author": "Sumanta Kumar Mohanta",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sumanta-k/api-horizon/issues"
+    },
+    "homepage": "https://github.com/sumanta-k/api-horizon#readme"
 }
