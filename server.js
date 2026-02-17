@@ -1,4 +1,5 @@
 import { createServer } from "node:http";
+import { getDataFromDB } from "./database/db.js";
 
 const PORT = 3000;
 
