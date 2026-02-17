@@ -3,9 +3,12 @@ import { getDataFromDB } from "./database/db.js";
 
 const PORT = 3000;
 
-const server = createServer((req, res) => {
-    if (req.url === "/api" && req.method === "GET"){
-        res.end("data has been sent from /api route");
+const server = createServer(async (req, res) => {
+    const destinations = await getDataFromDB();
+
+    if (req.url === "/api" && req.method === "GET") {
+        res.setHeader("Content-Type", "application/json");
+        res.end(JSON.stringify(destinations));
     }
 });
 
