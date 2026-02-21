@@ -9,6 +9,14 @@ const server = createServer(async (req, res) => {
     if (req.url === "/api" && req.method === "GET") {
         res.setHeader("Content-Type", "application/json");
         res.end(JSON.stringify(destinations));
+    } else {
+        res.setHeader("Content-Type", "application/json");
+        res.end(
+            JSON.stringify({
+                error: "not found",
+                message: "The requested route does not exist",
+            }),
+        );
     }
 });
 
